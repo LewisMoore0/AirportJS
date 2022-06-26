@@ -1,0 +1,19 @@
+{
+  "name": "airportjs",
+  "version": "1.0.0",
+  "description": "As an air traffic controller So I can get passengers to a destination I want to instruct a plane to land at an airport",
+  "main": "plane.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LewisMoore0/AirportJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LewisMoore0/AirportJS/issues"
+  },
+  "homepage": "https://github.com/LewisMoore0/AirportJS#readme"
+}
