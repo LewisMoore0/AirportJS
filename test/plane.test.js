@@ -1,4 +1,4 @@
-let Plane = require('./plane.js')
+let Plane = require('../src/plane.js')
 
 describe('Plane', () => {
     test('should be instance of class', () => {
