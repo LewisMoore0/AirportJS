@@ -14,7 +14,6 @@ describe('Plane', () => {
     test('land function should set isLanded to true', () => {
         let plane = new Plane
         plane.isLanded = false;
-        console.log(plane.isLanded, 'XXXXXXXX')
         plane.land();
         expect(plane.isLanded).toBe(true)
     })
