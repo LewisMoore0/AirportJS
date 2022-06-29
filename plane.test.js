@@ -14,7 +14,13 @@ describe('Plane', () => {
     test('land function should set isLanded to true', () => {
         let plane = new Plane
         plane.isLanded = false;
-        plane.land()
+        console.log(plane.isLanded, 'XXXXXXXX')
+        plane.land();
         expect(plane.isLanded).toBe(true)
     })
+
+    test('throw an error if plane is already landed', () => {
+        let plane = new Plane
+        expect(plane.land()).toEqual('Plane is already on the ground!')
+    }) 
 })
