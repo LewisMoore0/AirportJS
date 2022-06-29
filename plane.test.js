@@ -5,4 +5,9 @@ describe('Plane', () => {
         let plane = new Plane
         expect(plane).toBeInstanceOf(Plane)
     })
+
+    test('should have isLanded property true by default', () => {
+        let plane = new Plane
+        expect(plane.isLanded).toBe(true)
+    })
 })

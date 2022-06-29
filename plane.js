@@ -1,6 +1,6 @@
 class Plane {
     constructor() {
-        
+        this.isLanded = true;
     }
 }
 
