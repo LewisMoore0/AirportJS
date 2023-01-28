@@ -1,6 +1,7 @@
 class Plane {
-    constructor() {
+    constructor(airport) {
         this.isLanded = true;
+        this.airport = airport
     }
 
     land() {

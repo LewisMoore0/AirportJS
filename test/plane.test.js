@@ -1,4 +1,11 @@
 let Plane = require('../src/plane.js')
+let airportMock = jest.mock('../src/airport.js', () => {
+    return jest.fn(() => { 
+        {
+            landedPlanes: []
+        }
+    })
+})
 
 describe('Plane', () => {
     test('should be instance of class', () => {
@@ -22,4 +29,9 @@ describe('Plane', () => {
         let plane = new Plane
         expect(plane.land()).toEqual('Plane is already on the ground!')
     }) 
+
+    test('by default, a plane is landed in an airport upon initialisation', () => {
+        let plane = new Plane(airportMock);
+        expect(plane.airport).toEqual(airportMock)
+    })
 })
